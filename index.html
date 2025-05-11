@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Validação com Expressões Regulares</title>
+  </head>
+  <body>
+    <h2>Formulário com Validação por Expressões Regulares</h2>
+    <form id="formulario">
+      <label
+        >Nome completo:
+        <input type="text" id="nome" required />
+        <span class="error" id="erroNome"></span>
+      </label>
+
+      <label
+        >E-mail:
+        <input type="email" id="email" required />
+        <span class="error" id="erroEmail"></span>
+      </label>
+
+      <label
+        >Senha:
+        <input type="password" id="senha" required />
+        <span class="error" id="erroSenha"></span>
+      </label>
+
+      <label
+        >CPF:
+        <input type="text" id="cpf" required placeholder="000.000.000-00" />
+        <span class="error" id="erroCPF"></span>
+      </label>
+
+      <label
+        >Telefone:
+        <input
+          type="text"
+          id="telefone"
+          required
+          placeholder="(91) 99999-9999"
+        />
+        <span class="error" id="erroTelefone"></span>
+      </label>
+
+      <button type="submit">Validar</button>
+      <div class="success" id="sucesso"></div>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
